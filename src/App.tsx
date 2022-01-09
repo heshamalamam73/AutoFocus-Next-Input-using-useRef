@@ -3,9 +3,9 @@ import Input from "./components/Input";
 import { useRef, useEffect } from "react";
 
 export default function App() {
-  const firstNameRef = useRef<HTMLElement | null>(null);
-  const lastNameRef = useRef<HTMLElement | null>(null);
-  const submitRef = useRef<HTMLElement | null>(null);
+  const firstNameRef = useRef<HTMLInputElement | null>(null);
+  const lastNameRef = useRef<HTMLInputElement | null>(null);
+  const submitRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
     if (firstNameRef.current) {

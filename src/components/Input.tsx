@@ -6,7 +6,7 @@ export type InputProps = {
   type?: string;
   onChange?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
 };
-export type Ref = LegacyRef<HTMLInputElement> | undefined;
+export type Ref = LegacyRef<HTMLInputElement> | null;
 
 const InputContainer = (
   { placeholder, onKeyDown, type }: InputProps,

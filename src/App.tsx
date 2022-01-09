@@ -7,13 +7,11 @@ export default function App() {
   const lastNameRef = useRef<HTMLElement | null>(null);
   const submitRef = useRef<HTMLElement | null>(null);
 
-  // if you want AutoFocus for the first input when component render
-
-  // useEffect(() => {
-  //   if (firstNameRef.current) {
-  //     firstNameRef.current.focus();
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (firstNameRef.current) {
+      firstNameRef.current.focus();
+    }
+  }, []);
   const onFirstNameKeyDown = (e: any) => {
     if (e.key === "Enter" && lastNameRef.current) {
       lastNameRef.current.focus();
